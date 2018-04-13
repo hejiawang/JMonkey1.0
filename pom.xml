@@ -47,6 +47,7 @@
 		<druid.spring.boot.version>1.1.9</druid.spring.boot.version>
 		<mybatisplus.version>2.2.0</mybatisplus.version>
 		<mybatisplus.spring.boot.version>1.0.5</mybatisplus.spring.boot.version>
+		<shiro.version>1.4.0</shiro.version>
 	</properties>
 
 	<dependencies>
@@ -104,12 +105,21 @@
 		</dependency>
 		<!-- 数据连接 End -->
 
-		<!--热部署功能-->
+		<!-- Shiro Start -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+		<!-- Shiro End -->
+
+		<!--热部署功能 start-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<!--热部署功能 start-->
 	</dependencies>
 
 	<build>
