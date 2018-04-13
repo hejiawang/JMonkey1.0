@@ -1,0 +1,11 @@
+.industry-container {background: #ffffff; position:absolute; z-index: 999999999; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);}
+.industry-header {padding: 8px 15px; padding-bottom: 2px; background: #23c6c8; color: #ffffff;}
+.industry-tool-icon {position: absolute; right: 20px; top: 10px;}
+.industry-header span{color: #f8ac59;}
+.industry-content {font-size: 13px; margin: 10px;}
+.industry-content .industry-root {width: 18rem; font-weight: 700; text-align: right; line-height: 2; float: left;}
+.industry-content ul {margin-left: 18rem; list-style: none;}
+.industry-content ul li{float: left; width: 260px; margin-top: 4px; margin-bottom: 4px;}
+.industry-content ul li a{padding: 4px; color: #999;}
+.industry-content ul li a:hover{color: #FFFFFF; background: #23c6c8; border-radius: 2px;}
+.industry-content ul li a.industry-active {color: #FFFFFF; background: #23c6c8; border-radius: 2px;}

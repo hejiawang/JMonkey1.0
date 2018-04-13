@@ -1,0 +1,74 @@
+<!--左侧导航开始-->
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="nav-close"><i class="fa fa-times-circle"></i>
+    </div>
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <span><div class="img-circle user-icon user-icon-default"></div></span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs"><strong class="font-bold">xx</strong></span>
+                            <span class="text-muted text-xs block">xx<b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a class="J_menuItem" href="form_avatar.html">修改头像</a>
+                        </li>
+                        <li><a class="J_menuItem" href="profile.html">个人资料</a>
+                        </li>
+                        <li><a class="J_menuItem" href="contacts.html">联系我们</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a class="logout" href="javascript:void(0);">安全退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-home fa-fw"></i>
+                    <span class="nav-label">主页</span>
+                </a>
+            </li>
+
+            <li>
+            	<a href="#">
+                    <i class="fa fa-home fa-fw"></i>
+                    <span class="nav-label">xx</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level">
+                	<li>
+                        <a class="J_menuItem" href="http://www.baidu.com"><i class="fa fa-home fa-fw"></i>xx</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class="jbipp-menu-toggle navbar-minimalize">
+    <i class="fa fa-angle-double-right"></i>
+</div>
+<script type="text/javascript">
+    $(function() {
+
+        var i = $('.jbipp-menu-toggle').find('i');
+        setTimeout(function () {
+            if (!$('body').hasClass('mini-navbar')) {
+                $('.jbipp-menu-toggle').css('left', '220px');
+                i.removeClass('fa-angle-double-right').addClass('fa-angle-double-left');
+            }
+        }, 200);
+
+        $('.jbipp-menu-toggle').on('click', function () {
+            var flg = $('.jbipp-menu-toggle').css('left') == '220px';
+            $('.jbipp-menu-toggle').animate({'left': flg ? '70px' : '220px'}, flg ? 200 : 500, null, function () {
+                flg ? i.removeClass('fa-angle-double-left').addClass('fa-angle-double-right') : i.removeClass('fa-angle-double-right').addClass('fa-angle-double-left');
+            });
+        });
+
+    });
+</script>

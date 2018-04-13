@@ -1,0 +1,13 @@
+jMonkey:
+    project:
+        title: JMonkey后台管理系统
+        name: JMonkey
+        ip: localhost
+        port: 8080
+        domain: http://${jMonkey.project.ip}:${jMonkey.project.port}/${jMonkey.project.name}
+    datasource:
+        url: 192.168.1.191:3306/test
+        username: root
+        passward: 123456
+    script:
+        min:

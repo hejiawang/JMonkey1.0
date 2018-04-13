@@ -1,0 +1,96 @@
+.float-e-margins .btn {margin-bottom: 0px; margin-left: 3px;}
+.wrapper-content {padding: 10px 10px 5px 10px;}
+.ibox-content {padding: 15px 20px 12px 20px;}
+.btn-default {background-color: #ffffff; border-color: #c2c2c2; color: #333;}
+.fixed-table-pagination {padding-top: 13px;}
+
+.bg-green {background: #23c6c8; color: #fff;}
+.font-white {color: #fff;}
+.m-b {margin-bottom: 0px;}
+
+.treeview .node-selected .text-info, .treeview .node-selected .text-warning {color: #ffffff;}
+.treeview span.indent {margin-left: 5px;}
+.list-group-item {padding: 6px 5px;}
+.checkbox-info input[type="checkbox"]:checked + label::before, .checkbox-info input[type="radio"]:checked + label::before {
+    background-color: #23c6c8;
+    border-color: #23c6c8;
+}
+
+label.error:before {content: "\f057"; font-family:'FontAwesome'; margin-right: 5px; margin-top:2px;}
+label.error {color: #cc5965; display: inline-block; margin-left: 5px; position: absolute; right: 25px; top: 8px; z-index: 100;}
+
+.city-picker-span {border: 1px solid #e5e6e7;}
+.city-picker-span .placeholder, .city-picker-span .title {margin-left: 12px;}
+.city-picker-span.focus, .city-picker-span.open {border-color: #1AB394;}
+.city-select-tab {background: #23c6c8;}
+.city-select-tab > a {color: #ffffff;}
+.city-select-tab > a.active {color: #23c6c8;}
+.city-select a:hover {color: #23c6c8;}
+.city-select a.active {background: #23c6c8;}
+
+.jbipp-site-logo {width: 55px; padding: 4px; margin: 4px 10px; float: left;}
+.jbipp-system-name {float: left; font-size: 20px; margin-top: 18px; color: #333; font-weight: 600;}
+.jbipp-menu-toggle {background: #2f4050; position: absolute; left: 70px; top: 50%; padding: 4px 2px; font-size: 18px; color: #ffffff; border-bottom-right-radius: 3px; border-top-right-radius: 3px; cursor: pointer;}
+.wrapper-content {padding: 10px;}
+.ibox {margin-bottom: 0px;}
+.ibox-title {padding: 9px 15px 7px;}
+.ibox-title h5 {margin: 6px 0 0 0;}
+.jbipp-input-group {position: static;}
+.jbipp-view-text {position: relative; top: 7px;}
+.jbipp-col {padding-left: 0px; padding-right: 0px;}
+.jbipp-col-left {padding-left: 10px;}
+.jbipp-col-top {padding-top: 10px;}
+
+.user-icon {width: 64px; height: 64px; margin-right: 20px; margin-bottom: 5px;}
+.user-icon-default {background: url("../images/default_icon.png") -17px -15px no-repeat; background-size: 100px;}
+.user-icon1 {background: url("../images/user_icons.png") -40px -38px no-repeat;}
+.user-icon2 {background: url("../images/user_icons.png") -159px -42px no-repeat;}
+.user-icon3 {background: url("../images/user_icons.png") -278px -39px no-repeat;}
+.user-icon4 {background: url("../images/user_icons.png") -397px -38px no-repeat;}
+.user-icon5 {background: url("../images/user_icons.png") -40px -158px no-repeat;}
+.user-icon6 {background: url("../images/user_icons.png") -159px -159px no-repeat;}
+.user-icon7 {background: url("../images/user_icons.png") -277px -157px no-repeat;}
+.user-icon8 {background: url("../images/user_icons.png") -396px -160px no-repeat;}
+.user-icon9 {background: url("../images/user_icons.png") -40px -276px no-repeat;}
+.user-icon10 {background: url("../images/user_icons.png") -159px -274px no-repeat;}
+.user-icon11 {background: url("../images/user_icons.png") -277px -276px no-repeat;}
+.user-icon12 {background: url("../images/user_icons.png") -396px -276px no-repeat;}
+
+table tbody tr td a.user-icon {width: 32px; height: 32px; display: block; margin: 0 auto;}
+table tbody tr td a.user-icon-default_x32 {background: url("../images/default_icon.png") -8px -7px no-repeat; background-size: 50px;}
+table tbody tr td a.user-icon1 {background: url("../images/user_icons.png") -9px -12px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon2 {background: url("../images/user_icons.png") -52px -12px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon3 {background: url("../images/user_icons.png") -95px -12px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon4 {background: url("../images/user_icons.png") -138px -12px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon5 {background: url("../images/user_icons.png") -9px -55px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon6 {background: url("../images/user_icons.png") -52px -55px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon7 {background: url("../images/user_icons.png") -95px -55px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon8 {background: url("../images/user_icons.png") -138px -55px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon9 {background: url("../images/user_icons.png") -9px -96px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon10 {background: url("../images/user_icons.png") -52px -96px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon11 {background: url("../images/user_icons.png") -95px -96px no-repeat; background-size: 180px;}
+table tbody tr td a.user-icon12 {background: url("../images/user_icons.png") -138px -96px no-repeat; background-size: 180px;}
+
+.jbipp-container-icon a {filter:alpha(opacity=30); -moz-opacity:0.3; -khtml-opacity: 0.3; opacity: 0.3;}
+.jbipp-container-icon a i{position: relative; left: 35px; top: 43px; display: none;}
+.jbipp-container-icon a:hover {border: 1px dotted #787878; filter:alpha(opacity=100); -moz-opacity:1; -khtml-opacity: 1; opacity: 1;}
+
+.jbipp-container-icon .user-icon-active {border: 1px dotted #787878; filter:alpha(opacity=100); -moz-opacity:1; -khtml-opacity: 1; opacity: 1;}
+.jbipp-container-icon .user-icon-active i {display: block;}
+
+.btn-margin-top {margin-top: 1px; padding-top: 6px; padding-bottom: 6px;}
+.jbipp-min-width {min-width: 180px;}
+.jbipp-detail {padding: 8px 10px; border: 1px solid #e5e6e7; border-radius: 2px; word-wrap: break-word; width: 100%; margin-bottom: 0px;}
+
+.jbipp-win-right {position: fixed; top: 0px; bottom: 0px; right: 0px; min-width: 300px; background: #ffffff; border-radius: 0;}
+.jbipp-win-right .layui-layer-title {border-radius: 0;}
+
+.jbipp-note{margin: 10px 14px;}
+
+.jbipp-container-user {margin: 5px 2px; float: left;}
+.jbipp-pull-left {background: #808080; float: left; padding: 5px 5px; margin-left: 10px; border-top-left-radius: 2px; border-bottom-left-radius: 2px;}
+.jbipp-pull-left p {margin: 0 0 14px; position: relative; top: 8px; color: #f8ac59;}
+.jbipp-pull-right {background: #23c6c8; min-width: 120px; float: left; padding: 5px 10px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; padding-right: 20px;}
+.jbipp-pull-right a {float: left;}
+.jbipp-pull-right p {float: left; color: #ffffff; position: relative; top: 8px; left: 10px;}
+.jbipp-ibox-top {margin-top: 10px;}

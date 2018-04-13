@@ -1,0 +1,44 @@
+.layui-layer {
+    -webkit-overflow-scrolling: touch;
+    top: 150px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    -webkit-background-clip: content;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    /*border-radius: 8px;*/
+}
+
+.layui-layer-title {
+    padding: 0 80px 0 20px;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    border-radius: 2px 2px 0 0;
+    border-bottom: 1px solid #23c6c8;
+}
+
+.layui-layer-btn0 {
+    border-color: #23c6c8;
+    background-color: #23c6c8;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    border-color: #23c6c8;
+    background-color: #23c6c8;
+}
+
+.layui-layer-title {
+    /*border-radius: 8px 8px 0px 0px;*/
+}
+
+.layer-ext-rabbit-msg {
+    background: rgba(0,0,0,.6);
+    color: #ffffff;
+}

@@ -1,0 +1,30 @@
+[#macro header]
+<!DOCTYPE html>
+<html>
+<head>
+    [#include "head.html"]
+    [#nested]
+</head>
+[/#macro]
+
+[#macro body]
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+<div id="wrapper">
+    [#include "menu.html"]
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        [#include "header.html"]
+        [#include "tab.html"]
+        [#nested]
+        [#include "option.html"]
+        [#include "footer.html"]
+    </div>
+</div>
+[/#macro]
+
+[#macro footer]
+[#include "scripts.html"]
+<!-- customer -->
+[#nested]
+</body>
+</html>
+[/#macro]

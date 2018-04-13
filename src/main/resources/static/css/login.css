@@ -1,0 +1,14 @@
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}body,html{width:100%;height:100%;background:#111}html{-webkit-tap-highlight-color:transparent}body{font:400 75% Arial,Helvetica,sans-serif}canvas{display:block;vertical-align:bottom}.count-particles{background:#002;position:absolute;top:48px;left:0;width:80px;color:#13E8E9;font-size:.8em;text-align:left;text-indent:4px;line-height:14px;padding-bottom:2px;font-family:Helvetica,Arial,sans-serif;font-weight:700}.js-count-particles{font-size:1.1em}#stats,.count-particles{-webkit-user-select:none;margin-top:5px;margin-left:5px}#stats{border-radius:3px 3px 0 0;overflow:hidden}.count-particles{border-radius:0 0 3px 3px}#particles-background{width:100%;height:100%;background-color:#387;background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+html, body {font-family: "Microsoft Yahei";}
+.ipp-login-header {position: fixed; width: 100%; height: 50px; background: rgba(0, 0, 0, 0.2); color: #ffffff;}
+.ipp-web-link {position: fixed; right: 15px; top: 17px; color: #ffffff; cursor: pointer; font-weight: 600; text-decoration: none;}
+.ipp-web-link:hover {color: #ec971f; text-decoration:  none;}
+.ipp-login-container {position: absolute; width: 400px; top: 25%; left: 50%; margin: 0 auto; margin-left: -200px; height: 300px;}
+.ipp-login-body {padding: 80px 40px 10px 40px; background: rgba(250, 250, 250, 1); width: 400px; box-shadow:1px 2px 1px #ccc;}
+.ipp-logo {height: 50px; background: url('../images/logo.png') no-repeat 3px; background-size:45px 40px; margin-left: 15px; line-height: 50px; padding-left: 60px; font-size: 24px;}
+.ipp-logo sup {padding: 2px 4px; margin-left: 5px; top: -1em; font-size: 12px; border: 1px solid #d58512; border-radius: 5px; background: #ec971f; color: #ffffff;}
+.ipp-login-head {width: 100%; height: 50px; line-height: 50px; color: #333; text-align: center; position: inherit; font-size: 18px; font-weight: 500; border-bottom: 1px solid #e2e2e2;}
+.ipp-login-foot {position: absolute; right: 2px; margin-top: 15px; color: #ffffff; font-size: 14px;}
+.ipp-captcha {border: 1px solid #e5e6e7; width: 117px; height: 34px; margin-left: 10px; position: absolute; cursor: pointer;}
+.ipp-captcha-refresh {position: absolute; right: 40px; }
+#captcha-error {right: 140px;}

@@ -1,0 +1,87 @@
+jMonkey:
+    freemarker:
+        templateLoaderPath: classpath:/templates
+        freemarkerSettings:
+            template_update_delay: 5  #刷新模板的周期，单位为秒
+            default_encoding: UTF-8 #模板的编码格式
+            locale: UTF-8 #本地化设置
+            datetime_format: yyyy-MM-dd HH:mm:ss
+            time_format: HH:mm:ss
+            number_format: 0.####
+            boolean_format: true,false
+            whitespace_stripping: true
+            tag_syntax: auto_detect
+            url_escaping_charset: UTF-8
+        freemarkerVariables:
+            webURL: ${jMonkey.project.domain}
+            cssURL: ${jMonkey.project.domain}/css
+            libURL: ${jMonkey.project.domain}/lib
+            imagesURL: ${jMonkey.project.domain}/images
+            scriptsURL: ${jMonkey.project.domain}/scripts
+            min: ${jMonkey.script.min}  #script插件是否min包
+            systemName: ${jMonkey.project.title} #系统页面title显示内容
+
+spring:
+    application:
+        name: ${jMonkey.project.name}
+    profiles:
+        active: dev
+    freemarker:
+        suffix: .html
+        request-context-attribute: request
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://${jMonkey.datasource.url}?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+        username: ${jMonkey.datasource.username}
+        password: ${jMonkey.datasource.passward}
+        # 下面为连接池的补充设置，应用到上面所有数据源中
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+        # 配置获取连接等待超时的时间
+        maxWait: 60000
+        # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+        timeBetweenEvictionRunsMillis: 60000
+        # 配置一个连接在池中最小生存的时间，单位是毫秒
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: SELECT 1 FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+        filters: stat,wall
+        logSlowSql: true
+
+# Tomcat
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    port: ${jMonkey.project.port}
+    servlet:
+        context-path: /${jMonkey.project.name}
+
+#mybatis
+mybatis-plus:
+    mapper-locations: classpath:mapper/*.xml
+    typeAliasesPackage: com.wang.jmonkey.modules.*.entity #实体扫描，多个package用逗号或者分号分隔
+    global-config:
+        id-type: 3 #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+        field-strategy: 2 #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+        db-column-underline: true #驼峰下划线转换
+        refresh-mapper: true #刷新mapper 调试神器
+        #capital-mode: true #数据库大写下划线转换
+        #key-generator: com.baomidou.springboot.xxx #序列接口实现类配置
+        logic-delete-value: -1 #逻辑删除配置
+        logic-not-delete-value: 0
+        #meta-object-handler: com.baomidou.springboot.xxx #自定义填充策略接口实现
+        sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector #自定义SQL注入器
+    configuration:
+        map-underscore-to-camel-case: true
+        cache-enabled: false
+        call-setters-on-nulls: true
