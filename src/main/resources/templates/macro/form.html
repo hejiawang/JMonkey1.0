@@ -1,0 +1,33 @@
+<!-- 表单模版 -->
+[#macro form id="" class="" role="" method="" action=""]
+<form role="${role}" class="${class}" method="${method}" action="${action}" id="${id}">
+    [#nested]
+</form>
+[/#macro]
+
+<!-- 按钮元素 -->
+[#macro button id="" class="" winSettings="" icon="" text=""]
+<a id="${id}" class="btn ${class}" data-win-settings="${winSettings}">
+     <i class="${icon}"> </i> ${text}
+ </a>
+[/#macro]
+
+<!-- input元素 -->
+[#macro input id="" name="" groupClass="form-group" class="" text="" type="text"]
+<div class="${groupClass}">
+    <label for="${id}" class="sr-only">${text}</label>
+    <input type="${type}" placeholder="请输入${text}" id="${id}" name="${name}" class="${class}">
+</div>
+[/#macro]
+
+<!-- form-group元素 -->
+[#macro formGroup text="" class="" colLeft="2" colRight="10"]
+<div class="form-group ${class}">
+    <label class="col-sm-${colLeft} control-label">${text}</label>
+    <div class="col-sm-${colRight}">
+    [#nested]
+    </div>
+</div>
+<div class="hr-line-dashed ${class}"></div>
+[/#macro]
+

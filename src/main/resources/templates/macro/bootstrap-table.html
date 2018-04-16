@@ -1,0 +1,34 @@
+[#macro table id="table" select="" classes="table table-hover table-condensed" number="" url="" align="center"]
+	<table id="${id}" style="cursor: pointer;" data-classes="${classes}" >
+		<thead>
+			[#if select == 'checkbox']
+            <th data-checkbox="true" data-halign="${align}" data-width="2%"></th>
+            [#elseif select == 'radio']
+            <th data-radio="true" data-halign="${align}"></th>
+            [#else][/#if]
+            [#if number == 'number']
+            <th data-formatter="number" data-halign="${align}" data-align="${align}" data-width="3%">序号</th>
+            [/#if]
+            [#nested]
+		</thead>
+	</table>
+[/#macro]
+
+[#macro options text="操作" halign="center" align="left" width="10%" filter=""]
+<th data-field="options" data-formatter="optionsFormater" data-width="${width}" data-click-to-select="false" data-halign="${halign}" data-align="${align}">${text}</th>
+<script type="text/javascript">
+function optionsFormater(value, row, index) {
+    var _html = '';
+    if (eval("${filter}")) {
+        _html = eval("${filter}")([[#nested]], value, row, index).join('');
+    } else {
+        _html = [[#nested]].join('');
+    }
+	return _html;
+}
+</script>
+[/#macro]
+
+[#macro optionBtn text="" class="" icon="" winWith="" winUrl="" winWidth="" winHeight="" winTitle="" rowId="row.id"]
+	'<button class="${class}" type="button" data-id="' + eval('(${rowId})') + '" win-title="${winTitle}" win-width="${winWidth}" win-height="${winHeight}" win-with="${winWith}" win-url="${winUrl}" ><i class="${icon} fa-fw"></i> ${text}</button>',
+[/#macro]

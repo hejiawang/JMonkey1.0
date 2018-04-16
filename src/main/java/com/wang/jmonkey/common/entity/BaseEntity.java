@@ -1,5 +1,8 @@
 package com.wang.jmonkey.common.entity;
 
+import lombok.Data;
+import lombok.experimental.Accessors;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,6 +11,8 @@ import java.util.Date;
  * @Auther: HeJiawang
  * @Date: 2018/4/13
  */
+@Data
+@Accessors(chain = true)
 public abstract class BaseEntity implements Serializable {
 
     /**

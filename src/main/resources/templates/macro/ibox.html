@@ -1,0 +1,44 @@
+<!-- ibox布局 -->
+[#macro ibox id="" class=""]
+<div id="${id}" class="ibox float-e-margins ${class}">
+    [#nested]
+</div>
+[/#macro]
+
+<!-- ibox title -->
+[#macro iboxtitle]
+<div class="ibox-title">
+    <div class="row row-lg">
+        <div class="col-sm-12">
+            <!-- Example Classes -->
+            <div class="example-wrap">
+                <div class="example">
+                    [#nested]
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+[/#macro]
+
+<!-- ibox body -->
+[#macro iboxbody class=""]
+<div class="ibox-content ${class}">
+    <div class="row row-lg">
+        <div class="col-sm-12">
+            <!-- Example Classes -->
+            <div class="example">
+                [#nested]
+            </div>
+            <!-- End Example Classes -->
+        </div>
+    </div>
+</div>
+[/#macro]
+
+<!-- 漂浮布局 -->
+[#macro float direction="left" id="" class=""]
+<div class="pull-${direction}" id="${id}" class="${class}">
+    [#nested]
+</div>
+[/#macro]

@@ -24,9 +24,9 @@ public class PageController extends BaseHttp {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/{views}/{page}.html", method = RequestMethod.GET)
-    public String page (@PathVariable("views") String views, @PathVariable("page") String page, Model model) {
+    @RequestMapping(value = "/{modules}/{views}/{page}.html", method = RequestMethod.GET)
+    public String page (@PathVariable("modules") String modules, @PathVariable("views") String views, @PathVariable("page") String page, Model model) {
         super.paramsHandler(model);
-        return new StringBuilder(HttpConsts.VIEW_BASE).append(views).append(HttpConsts.URI_SEPARATOR).append(page).toString();
+        return new StringBuilder(HttpConsts.VIEW_BASE).append(modules).append(HttpConsts.URI_SEPARATOR).append(views).append(HttpConsts.URI_SEPARATOR).append(page).toString();
     }
 }
