@@ -29,6 +29,6 @@ function optionsFormater(value, row, index) {
 </script>
 [/#macro]
 
-[#macro optionBtn text="" class="" icon="" winWith="" winUrl="" winWidth="" winHeight="" winTitle="" rowId="row.id"]
-	'<button class="${class}" type="button" data-id="' + eval('(${rowId})') + '" win-title="${winTitle}" win-width="${winWidth}" win-height="${winHeight}" win-with="${winWith}" win-url="${winUrl}" ><i class="${icon} fa-fw"></i> ${text}</button>',
+[#macro optionBtn text="" class="" icon="" tableEvent="" winWith="" winUrl="" winWidth="" winHeight="" winTitle="" rowId="row.id"]
+	'<button class="${class}" type="button" table-event="${tableEvent}" data-id="' + eval('(${rowId})') + '" win-title="${winTitle}" win-width="${winWidth}" win-height="${winHeight}" win-with="${winWith}" win-url="${winUrl}" ><i class="${icon} fa-fw"></i> ${text}</button>',
 [/#macro]

@@ -10,8 +10,8 @@
 
     	[@iboxtitle]
             [@float direction="left"]
-                <a class="btn btn-sm btn-info btn-outline rabbit-btn rabbit-btn-save" win-with="open" win-width="100%" win-height="100%" ><i class="fa fa-plus-circle"> </i> 新增用户</a>
-                <a class="btn btn-sm btn-danger btn-outline rabbit-btn rabbit-btn-del" win-with="confirm"><i class="fa fa-trash-o"> </i> 删除用户</a>
+                <a class="btn btn-sm btn-info btn-outline rabbit-table-btn" table-event="save" win-with="open" win-width="100%" win-height="100%" ><i class="fa fa-plus-circle"> </i> 新增用户</a>
+                <a class="btn btn-sm btn-danger btn-outline rabbit-table-btn" table-event="delete" win-with="confirm"><i class="fa fa-trash-o"> </i> 删除用户</a>
             [/@float]
             [@float direction="right"]
                 [@form class="rabbit-search form-inline"]
@@ -33,9 +33,8 @@
                 <th data-field="userName" data-align="left" data-halign="center" data-width="75%">账号名称</th>
 
                 [@options width="15%"]
-                    [@optionBtn class="btn btn-success btn-xs btn-outline rabbit-btn rabbit-btn-modify" text="修改" winWith="open" winWidth="100%" winHeight="100%" winUrl="" icon="fa fa-object-ungroup" /]
-                    [@optionBtn class="btn btn-warning btn-xs btn-outline rabbit-btn rabbit-btn-detail" text="详情" winWith="right" winUrl="" icon="fa fa-sticky-note-o" /]
-                    [@optionBtn class="btn btn-success btn-xs rabbit-btn rabbit-btn-modify" winWith="custom" text="重置密码" icon="fa fa-key" /]
+                    [@optionBtn class="btn btn-success btn-xs btn-outline rabbit-table-btn" tableEvent="modify" text="修改" winWith="open" winWidth="100%" winHeight="100%" winUrl="" icon="fa fa-object-ungroup" /]
+                    [@optionBtn class="btn btn-warning btn-xs btn-outline rabbit-table-btn" tableEvent="detail" text="详情" winWith="right" winUrl="" icon="fa fa-sticky-note-o" /]
                 [/@options]
             [/@table]
         [/@iboxbody]
