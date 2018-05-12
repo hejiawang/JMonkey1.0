@@ -1,0 +1,32 @@
+[#include "../../../common/layout_content.html"]
+[#include "../../../macro/ibox.html"]
+[#include "../../../macro/form.html"]
+[@header/]
+[@body]
+<div class="wrapper wrapper-content">
+    [@ibox]
+        [@iboxbody]
+        	[@form class="form-horizontal"]
+        		[@formGroup text="账号名称"]
+        		<input type="text" class="form-control" placeholder="请输入账号名称" name="userName" data-rule-required='true' data-msg-required='请输入账号名称'>
+        		<input type="hidden" id="userId" name="id" value="">
+        		[/@formGroup]
+
+				[@formGroup text="真实姓名"]
+				<input type="text" class="form-control" placeholder="请输入真实姓名" name="realName">
+				[/@formGroup]
+
+        	[/@form]
+        [/@iboxbody]
+    [/@ibox]
+</div>
+
+[/@body]
+[@footer]
+<script type="text/javascript">
+
+	$(function () {
+
+	});
+</script>
+[/@footer]

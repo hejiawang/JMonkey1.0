@@ -15,16 +15,19 @@ public class HttpControllerResult<T>  {
     private T result;
     private int code;
     private String message;
+    private Boolean isSuccess = true;
 
     public HttpControllerResult () {}
 
     public HttpControllerResult (T t) {
         this.code = 0;
+        this.isSuccess = true;
         this.result = t;
     }
 
     public HttpControllerResult<T> error (int code, String message) {
         this.code = code;
+        this.isSuccess = false;
         this.message = message;
         return this;
     }

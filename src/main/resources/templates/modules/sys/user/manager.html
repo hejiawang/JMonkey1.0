@@ -14,15 +14,9 @@
                 <a class="btn btn-sm btn-danger btn-outline rabbit-table-btn" table-event="delete" win-with="confirm"><i class="fa fa-trash-o"> </i> 删除用户</a>
             [/@float]
             [@float direction="right"]
-                [@form class="rabbit-search form-inline"]
-                    <div class="form-group">
-                        <label for="userName" class="sr-only">账号名称</label>
-                        <input type="text" name="userName" placeholder="账号名称" id="userName" class="form-control input-sm">
-                    </div>
-                    <div class="form-group">
-                        <label for="mobile" class="sr-only">手机号码</label>
-                        <input type="text" name="mobile" placeholder="手机号码" id="mobile" class="form-control input-sm">
-                    </div>
+                [@form class="rabbit-search form-inline" id="searchForm"]
+                    [@input id="userName" name="userName" class="form-control input-sm" text="账号名称" /]
+                    [@input id="mobile" name="mobile" class="form-control input-sm" text="手机号码" /]
                     <button class="btn btn-sm btn-info" type="submit">查询</button>
                 [/@form]
             [/@float]
@@ -30,7 +24,8 @@
 
         [@iboxbody]
             [@table id="userTable" number="number" select="checkbox" align="center"]
-                <th data-field="userName" data-align="left" data-halign="center" data-width="75%">账号名称</th>
+                <th data-field="userName" data-align="left" data-halign="center" data-width="30%">账号名称</th>
+                <th data-field="realName" data-align="left" data-halign="center" data-width="45%">真实姓名</th>
 
                 [@options width="15%"]
                     [@optionBtn class="btn btn-success btn-xs btn-outline rabbit-table-btn" tableEvent="modify" text="修改" winWith="open" winWidth="100%" winHeight="100%" winUrl="" icon="fa fa-object-ungroup" /]

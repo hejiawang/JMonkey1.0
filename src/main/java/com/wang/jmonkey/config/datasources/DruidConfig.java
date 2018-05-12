@@ -19,9 +19,9 @@ import java.sql.SQLException;
  * @Auther: HeJiawang
  * @Date: 2018/4/12
  */
-@Configuration
+//@Configuration
 public class DruidConfig {
-    private Logger logger = LoggerFactory.getLogger(DruidConfig.class);
+    /*private Logger logger = LoggerFactory.getLogger(DruidConfig.class);
 
     @Value("${spring.datasource.url}")
     private String dbUrl;
@@ -115,5 +115,5 @@ public class DruidConfig {
             logger.error("druid configuration initialization filter", e);
         }
         return datasource;
-    }
+    }*/
 }
